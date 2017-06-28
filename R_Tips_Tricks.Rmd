@@ -1,0 +1,35 @@
+---
+title: "R Tips & Tricks"
+author: "Kelsey Warsinske"
+date: "June 28, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Data Structures
+
+Difference between matrix, data frame, vector and lists!
+
+List - most flexible R data structure.  They can be seen as a collection of elements without any restriction on the class, length or structure of each element. The only thing you need to take care of, is that you don't give two elements the same name. That might cause a lot of confusion, and R doesn't give an error for that.  Elements of lists can also be other lists, but lists do not have multiple rows.  
+
+Data Frame - A type of list but requires Data frames are lists as well, but they have a few restrictions: me of the behaviour of matrices. You can select rows and do operations on rows. All this implies that you should use a data frame for any dataset that fits in that twodimen
+    - Can't use the same name for two different variables
+    - All elements of a data frame are vectors
+    - All elements of a data frame have an equal length
+Data frames can mimick sosional structure. Essentially, you use data frames for any dataset where a column coincides with a variable and a row coincides with a single observation in the broad sense of the word. For all other structures, lists are the way to go.  Best to use when you plan to refer to columns by name.
+
+Matrix - Similar to a data frame but columns are of all the same type, data frames can have different types.  Matrices are also more memory efficient and necessary for any linear algebra.  
+
+Vector - A type of matrix with only one row and only accepts one data type. 
+
+
+## R Basic Code 
+-At the beginning of codes don't forget: rm(list = ls())
+
+-To check variable type: class("item name")
+
+-To get help on understanding something just type a question mark before it
+
