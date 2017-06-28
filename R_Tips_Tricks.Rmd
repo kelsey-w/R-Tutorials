@@ -31,7 +31,7 @@ Vector - A type of matrix with only one row and only accepts one data type.
 
 -To check variable type: class("item name")
 
--To get help on understanding something just type a question mark before it: ?<whatever>
+-To get help on understanding something just type a question mark before it: ?"whatever""
 
--To check the type of a data structure you can type: is.<data type>("name")
+-To check the type of a data structure you can type: is."data type"("name")
 
